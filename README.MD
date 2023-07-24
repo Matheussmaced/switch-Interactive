@@ -18,7 +18,7 @@ Projeto feito por:  Matheus Gregorio
 <br>
 
 <p align="center">
-  <img alt="theme switcher" src="github/Cover.jpg" width="100%">
+  <img alt="theme switcher" src="github/cover.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
