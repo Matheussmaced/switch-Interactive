@@ -6,10 +6,15 @@
 
 :root{
     --background: #292C35;
+    --backgroundLight: #f1f1f1;
 }
 
 body{
     background-color: var(--background);
+}
+
+.colorBackground{
+    background-color: var(--backgroundLight);
 }
 
 #switch{
@@ -23,6 +28,28 @@ body{
     transform: translate(-50%, -50%);
 }
 
+/*Animation right for left*/
+@keyframes slideRight{
+    from{
+        left: 78%;
+    }
+
+    to{
+        left: 25%;
+    }
+}
+
+/*Animation left for right*/
+@keyframes slideLeft{
+    from{
+        left: 25%;
+    }
+
+    to{
+        left: 78%;
+    }
+}
+
 #ball{
     width: 86.3px;
     height: 86.3px;
@@ -30,7 +57,44 @@ body{
     border-radius: 50%;
     position: absolute;
     top: 50%;
+     /*left: 25%;*/
+    animation: slideLeft 0.3s ease forwards;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/*img button*/
+
+#moon{
+    position: absolute;
+    top: 50%;
     left: 20%;
+    transform: translate(-50%, -50%);
+}
+.moon{
+    display: none;
+}
+
+#sun{
+    display: none;
+}
+
+.sun{
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    transform: translate(-50%, -50%); 
+}
+
+.ballAnimation{
+    width: 86.3px;
+    height: 86.3px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    animation: slideRight 0.3s ease forwards !important;
     transform: translate(-50%, -50%);
     cursor: pointer;
 }
