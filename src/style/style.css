@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: #292C35;
+}
+
+body{
+    background-color: var(--background);
+}
+
+#switch{
+    width: 235.3px;
+    height: 102px;
+    border-radius: 59px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ball{
+    width: 86.3px;
+    height: 86.3px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
